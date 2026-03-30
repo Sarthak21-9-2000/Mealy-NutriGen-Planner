@@ -1,4 +1,4 @@
-# 🍽️ AI Meal Planner (NutriGen Planner)
+# 🍽️ AI Meal Planner 
 
 An AI-powered web application that generates personalized 7-day Indian meal plans based on user inputs like age, weight, height, diet preference, and fitness goals.
 
