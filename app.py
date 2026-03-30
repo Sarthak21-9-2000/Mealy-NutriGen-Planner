@@ -9,29 +9,42 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def generate_ai_meal(diet, age, height, weight, goal):
     prompt = f"""
-    Create a 7-day {diet} Indian meal plan.
-
+    Create a simple and realistic 7-day {diet} Indian meal plan.
+    
     User details:
     - Age: {age}
-    - Weight: {weight}
-    - Height: {height}
+    - Weight: {weight} kg
+    - Height: {height} cm
     - Goal: {goal}
+    
+    Guidelines:
+    . Use affordable and easily available indian foods.
+    . Meals should be simple,home-style, and easy to prepare.
+    . Include non-veg optionsif applicable.
+    . Keep meals healthy and suitable for the  user's goal.
+    . Avoid expensive or uncommon ingredients.
+    . rovide approximate calorie counts for each meal.
+    
+    For each day, include:
+    . Breakfast
+    . Lunch
+    . Dinner
+    - Add estimated calories for each meal
 
-    For EACH meal include:
-    - Dish name
-    - Short description
-    - Estimated calories (in kcal)
-
-    Format EXACTLY like:
+    Format exactly like this:
 
     ### Day 1
     Breakfast: Oats Upma (250 kcal)
     Lunch: Dal Rice (400 kcal)
-    Dinner: Paneer Sabzi (450 kcal)
+    Dinner: Chicken Curry with Roti (450 kcal)
+
+    ### Day 2
     """
+    
     response = client.chat.completions.create(
         model="gpt-4o-mini",
-        messages=[{"role": "user","content": prompt}]
+        messages=[{"role": "user","content": prompt}],
+        temperature=0.4
     )
     return response.choices[0].message.content
 
