@@ -4,14 +4,21 @@ An AI-powered web application that generates personalized 7-day Indian meal plan
 
 ---
 
+## 🌐 Live Demo
+
+👉 https://mealy-nutrigen-planner.onrender.com/
+
+---
+
 ## 🚀 Features
 
 - 🧠 AI-generated personalized meal plans
 - 📅 Structured 7-day diet plan
-- 🔥 Daily calorie calculation
+- 🔥 Daily calorie tracking per meal
+- 📊 Total daily calorie calculation
 - 🎯 Goal-based recommendations (Weight Loss / Gain / Maintain)
 - 🥗 Vegetarian & Non-Vegetarian options
-- 💻 Clean and responsive UI
+- 💻 Clean, modern UI with card layout
 
 ---
 
@@ -23,12 +30,13 @@ An AI-powered web application that generates personalized 7-day Indian meal plan
 - **Deployment:** Render
 - **Server:** Gunicorn
 
+
 ---
 
 ## ⚙️ Installation (Local Setup)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Mealy-NutriGen-Planner.git
+git clone https://github.com/Sarthak21-9-2000/Mealy-NutriGen-Planner.git
 cd Mealy-NutriGen-Planner
 
 pip install -r requirements.txt
