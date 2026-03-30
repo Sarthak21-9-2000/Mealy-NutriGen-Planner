@@ -20,7 +20,7 @@ def generate_ai_meal(diet, age, height, weight, goal):
     Guidelines:
     . Use affordable and easily available indian foods.
     . Meals should be simple,home-style, and easy to prepare.
-    . Include non-veg optionsif applicable.
+    . Include non-veg options if applicable but keep  budget friendly.
     . Keep meals healthy and suitable for the  user's goal.
     . Avoid expensive or uncommon ingredients.
     . rovide approximate calorie counts for each meal.
